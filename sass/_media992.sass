@@ -1,0 +1,81 @@
+@media (max-width: 992px)
+  .features__item
+    width: 48%
+  .burger
+    display: flex
+    height: 29px
+    width: 50px
+    z-index: 120
+    position: relative
+    span
+      display: flex
+      width: 100%
+      height: 4px
+      background-color: #fff
+      position: absolute
+      top: 0px
+      transition: 0.3s
+      left: 50%
+      transform: translateX(-50%)
+    span:nth-child(2)
+      top: 13px
+    span:nth-child(3)
+      top: 26px
+    &__active
+      span
+        transition: 0.3s
+      span:nth-child(1)
+        transform: translateX(-50%) rotate(45deg)
+        top: 13px
+      span:nth-child(2)
+        transform: translateX(-50%) rotate(-45deg)
+        top: 13px
+      span:nth-child(3)
+        transform: translateX(-50%) rotate(135deg)
+        top: 13px
+      
+  .header__menu
+    position: absolute
+    right: 0
+    top: 87px
+    width: 50%
+    background-color: $main
+    transition: 0.3s
+    transform: translateX(100%)
+    &__active
+      transition: 0.3s
+      transform: translateX(0)
+    ul
+      display: block
+      width: 100%
+      padding: 20px 20px 60px 40px
+      li
+        margin: 15px 0
+        a
+          font-size: 22px
+  .catalog__slide
+    flex-direction: column
+    align-items: center
+  .catalog__img
+    width: 100%
+  .catalog__card
+    width: 100%
+    margin-top: 20px
+  .payment__wrap
+    flex-wrap: wrap
+  .payment__item
+    width: 50%
+  .gallery .slick-next, .catalog__wrap .slick-next, .feed .slick-next
+    right: 0
+    z-index: 50
+  .gallery .slick-prev, .catalog__wrap .slick-prev,.feed .slick-prev
+    left: 0
+    z-index: 50
+  .footer .contacts
+    flex-direction: column
+    align-items: center
+  .footer .contacts__text
+    width: 100%
+  .footer .contacts__map
+    width: 100%
+    margin-top: 50px

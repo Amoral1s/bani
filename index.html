@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" id="myViewport" content="width=device-width, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>New project</title>
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <meta property="og:title" content="" />
+  <meta name="keywords" content=""/>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script>
+    window.onload = function () {
+      if (screen.width < 579) {
+          var mvp = document.getElementById('myViewport');
+          mvp.setAttribute('content','width=578, maximum-scale=1.0, user-scalable=no');
+      }
+    }
+   /*  window.onresize = function() {
+    var mvp = document.getElementById('myViewport');
+    if (screen.width < 579) {
+          mvp.setAttribute('content','width=578, maximum-scale=1.0, user-scalable=no');
+      } else {
+       mvp.setAttribute('content','width=device-width, maximum-scale=1.0, user-scalable=no');
+    }
+    } */
+    </script>
+</head>
+<body>
+  
+  <header class="header " id="header">
+    <div class="header__wrap container">
+      <div class="header__logo">
+        <a href="/">
+          <img src="img/logo-bani.png" alt="Бани бочки">
+          <p>БаниБочки53.рф</p>
+        </a>
+      </div>
+      <!-- /.header__logo -->
+      <nav class="header__menu">
+        <ul>
+          <li>
+            <a href="#offer">Главная</a>
+          </li>
+          <li>
+            <a href="#features">Преимущества</a>
+          </li>
+          <li>
+            <a href="#catalog">Каталог бань</a>
+          </li>
+          <li>
+            <a href="#payment">Оплата и доставка</a>
+          </li>
+          <li>
+            <a href="#video">О нас</a>
+          </li>
+          <li>
+            <a href="#feed">Отзывы</a>
+          </li>
+          <li>
+            <a href="#gallery">Портфолио</a>
+          </li>
+          <li>
+            <a href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.header__menu -->
+      <div class="burger ">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!-- /.header__wrap container -->
+  </header>
+  <!-- /.header -->
+  <section class="offer navi" id="offer">
+    <div class="offer__wrap container">
+      <p class="offer__subtitle">
+        Великий Новгород
+      </p>
+      <h1 class="offer__title">
+        Бани бочки от производителя
+      </h1>
+      <p class="offer__subtitle">
+        Доставка и установка за 1 день
+      </p>
+      <div class="button offer__button callback-toggle">
+        Консультация
+      </div>
+    </div>
+    <!-- offer__wrap end-->
+  </section>
+  <!-- offer end-->
+  <section class="features navi" id="features">
+    <h2 class="title">
+      Почему выбирают бани бочки?
+    </h2>
+    <div class="features__wrap container">
+      <div class="features__item">
+        <div class="features__icon">
+          <img src="img/icons/feat1.svg" alt="">
+          <h3>
+            Компактность
+          </h3>
+        </div>
+        <div class="features__text">
+          <p>
+            Легко найти место даже на самом маленьком по площади участке.
+          </p>
+        </div>
+      </div>
+      <!-- features__item end-->
+      <div class="features__item">
+        <div class="features__icon">
+          <img src="img/icons/feat2.svg" alt="">
+          <h3>
+            Простота установки
+          </h3>
+        </div>
+        <div class="features__text">
+          <p>
+            Можно приобрести в готовом виде и установить на подготовленную площадку.
+          </p>
+        </div>
+      </div>
+      <!-- features__item end-->
+      <div class="features__item">
+        <div class="features__icon">
+          <img src="img/icons/feat3.svg" alt="">
+          <h3>
+            Мобильность
+          </h3>
+        </div>
+        <div class="features__text">
+          <p>
+            При перепланировке участка изделие легко переместить своими силами без привлечения тяжёлой техники
+          </p>
+        </div>
+      </div>
+      <!-- features__item end-->
+      <div class="features__item">
+        <div class="features__icon">
+          <img src="img/icons/feat4.svg" alt="">
+          <h3>
+            Быстрый прогрев
+          </h3>
+        </div>
+        <div class="features__text">
+          <p>
+            Благодаря округлой форме температура во внутреннем пространстве достигает отметки в +90 градусов за 30–40 минут
+          </p>
+        </div>
+      </div>
+      <!-- features__item end-->
+      <div class="features__item">
+        <div class="features__icon">
+          <img src="img/icons/feat5.svg" alt="">
+          <h3>
+            Универсальность
+          </h3>
+        </div>
+        <div class="features__text">
+          <p>
+            В бане можно установить любую печь (дровяную, электрическую, газовую. твердотопливную) и получить сухой или влажный пар.
+          </p>
+        </div>
+      </div>
+      <!-- features__item end-->
+      <div class="features__item">
+        <div class="features__icon">
+          <img src="img/icons/feat6.svg" alt="">
+          <h3>
+            Стоимость
+          </h3>
+        </div>
+        <div class="features__text">
+          <p>
+            В комплект входит все необходимое для принятия банных процедур.
+          </p>
+        </div>
+      </div>
+      <!-- features__item end-->
+    </div>
+    <!-- features__wrap end-->
+  </section>
+ <!-- features end-->
+ <section class="catalog container navi" id="catalog">
+   <h2 class="title">
+     Каталог
+   </h2>
+   <div class="catalog__wrap">
+     <div class="catalog__slide">
+       <div class="catalog__img">
+         <img src="img/slider/1.jpg" alt="">
+       </div>
+       <div class="catalog__card">
+         <h3>
+           Баня бочка 4м
+         </h3>
+         <div class="catalog__cost">
+           от 170.000 руб.
+         </div>
+         <div class="catalog__description">
+           <p>
+             В стоимость входит печка с защитой, камни 2 видов 60 кг, гималайская соль, бак 50л с краном, двери, полки и трапики во всех помещениях.
+           </p>
+         </div>
+         <div class="button catalog__button">
+           Заказать
+         </div>
+       </div>
+     </div>
+     <!-- /.catalog__slide -->
+     <div class="catalog__slide">
+       <div class="catalog__img">
+         <img src="img/slider/1.jpg" alt="">
+       </div>
+       <div class="catalog__card">
+         <h3>
+           Баня бочка 4м
+         </h3>
+         <div class="catalog__cost">
+           от 170.000 руб.
+         </div>
+         <div class="catalog__description">
+           <p>
+             В стоимость входит печка с защитой, камни 2 видов 60 кг, гималайская соль, бак 50л с краном, двери, полки и трапики во всех помещениях.
+           </p>
+         </div>
+         <div class="button catalog__button">
+           Заказать
+         </div>
+       </div>
+     </div>
+     <!-- /.catalog__slide -->
+     <div class="catalog__slide">
+       <div class="catalog__img">
+         <img src="img/slider/2.jpg" alt="">
+       </div>
+       <div class="catalog__card">
+         <h3>
+           Баня бочка 4м
+         </h3>
+         <div class="catalog__cost">
+           от 170.000 руб.
+         </div>
+         <div class="catalog__description">
+           <p>
+             В стоимость входит печка с защитой, камни 2 видов 60 кг, гималайская соль, бак 50л с краном, двери, полки и трапики во всех помещениях.
+           </p>
+         </div>
+         <div class="button catalog__button">
+           Заказать
+         </div>
+       </div>
+     </div>
+     <!-- /.catalog__slide -->
+   </div>
+   <!-- /.catalog__wrap -->
+ </section>
+ <!-- /.catalog container -->
+ <section class="payment container navi"  id="payment">
+   <h2 class="title">
+     Оплата и доставка
+   </h2>
+   <div class="payment__wrap">
+     <div class="payment__item">
+       <b>
+        01
+       </b>
+       <h3>
+        Звонок
+       </h3>
+       <p>
+        Вы звоните нам, либо оставляете заявку на сайте. Получаете консультацию о Вашей будущей бане.
+       </p>
+     </div>
+    <!-- /.payment__item -->
+     <div class="payment__item">
+       <b>
+        02
+       </b>
+       <h3>
+        Производство
+       </h3>
+       <p>
+        Вы приезжаете на производство, смотрите на вашу будущую баню. Оцениваете качество изготовления.
+       </p>
+     </div>
+    <!-- /.payment__item -->
+     <div class="payment__item">
+       <b>
+        03
+       </b>
+       <h3>
+        Договор
+       </h3>
+       <p>
+        После оценки бани, мы заключаем с Вами договор, вы вносите предоплату. Через 10 дней ваша баня готова.
+       </p>
+     </div>
+    <!-- /.payment__item -->
+     <div class="payment__item">
+       <b>
+        04
+       </b>
+       <h3>
+        Установка
+       </h3>
+       <p>
+        За 1 день мы доставим и установим баню на участок.
+        Мы даем расширеную гарантию на свою продукцию - 2 года!
+        </p>
+     </div>
+    <!-- /.payment__item -->
+   </div>
+ </section>
+ <!-- /.payment container -->
+ <section class="video navi"  id="video">
+   <h2 class="title">
+     Видео обзор нашей бани бочки
+   </h2>
+   <div class="video__wrap container">
+     <p>
+       Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Щеке запятых жизни переписали пояс точках грамматики они запятой снова!
+     </p>
+     <iframe class="video" width="560" height="315" data="https://www.youtube.com/embed/dSYlyDWfFto" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div>
+ </section>
+ <!-- /.video -->
+ <section class="feed container navi"  id="feed">
+   <h2 class="title">
+     Отзывы наших клиентов
+   </h2>
+   <div class="feed_wrap">
+    <div class="catalog__slide">
+      <div class="catalog__img">
+        <img src="img/slider/2.jpg" alt="">
+      </div>
+      <div class="catalog__card">
+        <h3>
+          Семья Павловых
+        </h3>
+        <div class="catalog__cost">
+          Владельцы бани 4х2м
+        </div>
+        <div class="catalog__description">
+          <p>
+            Доброго дня! Мы в прошлом году впервые узнали о банях-бочках и сразу в них влюбились!) Шикарно смотрится и полностью готова для использования. Проблема была в высокой стоимости из за кедра... Компания "БОЧКИН" предложила сделать ее из сосны и снизить цену на 40% Спасибо новым технологиям и компании "БОЧКИН" за недорогие цены и работы под ключ.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- /.catalog__slide -->
+    <div class="catalog__slide">
+      <div class="catalog__img">
+        <img src="img/slider/2.jpg" alt="">
+      </div>
+      <div class="catalog__card">
+        <h3>
+          Семья Павловых
+        </h3>
+        <div class="catalog__cost">
+          Владельцы бани 4х2м
+        </div>
+        <div class="catalog__description">
+          <p>
+            Доброго дня! Мы в прошлом году впервые узнали о банях-бочках и сразу в них влюбились!) Шикарно смотрится и полностью готова для использования. Проблема была в высокой стоимости из за кедра... Компания "БОЧКИН" предложила сделать ее из сосны и снизить цену на 40% Спасибо новым технологиям и компании "БОЧКИН" за недорогие цены и работы под ключ.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- /.catalog__slide -->
+    <div class="catalog__slide">
+      <div class="catalog__img">
+        <img src="img/slider/1.jpg" alt="">
+      </div>
+      <div class="catalog__card">
+        <h3>
+          Семья Павловых
+        </h3>
+        <div class="catalog__cost">
+          Владельцы бани 4х2м
+        </div>
+        <div class="catalog__description">
+          <p>
+            Доброго дня! Мы в прошлом году впервые узнали о банях-бочках и сразу в них влюбились!) Шикарно смотрится и полностью готова для использования. Проблема была в высокой стоимости из за кедра... Компания "БОЧКИН" предложила сделать ее из сосны и снизить цену на 40% Спасибо новым технологиям и компании "БОЧКИН" за недорогие цены и работы под ключ.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- /.catalog__slide -->
+   </div>
+ </section>
+<!-- /.feed -->
+ <section class="gallery navi"  id="gallery">
+   <h2 class="title">
+     Галерея наших бань
+   </h2>
+   <div class="gallery__wrap container">
+     <div class="gallery__item">
+       <img src="img/slider/1.jpg" alt="">
+     </div>
+     <!-- /.gallery__item -->
+     <div class="gallery__item">
+       <img src="img/slider/2.jpg" alt="">
+     </div>
+     <!-- /.gallery__item -->
+     <div class="gallery__item">
+       <img src="img/slider/1.jpg" alt="">
+     </div>
+     <!-- /.gallery__item -->
+     <div class="gallery__item">
+       <img src="img/slider/2.jpg" alt="">
+     </div>
+     <!-- /.gallery__item -->
+     <div class="gallery__item">
+       <img src="img/slider/1.jpg" alt="">
+     </div>
+     <!-- /.gallery__item -->
+     <div class="gallery__item">
+       <img src="img/slider/2.jpg" alt="">
+     </div>
+     <!-- /.gallery__item -->
+     
+   </div>
+ </section>
+<!-- /.gallery -->
+ <footer class="footer navi"  id="contacts">
+   <div class="contacts container">
+     <div class="contacts__text">
+       <h2 class="title">
+         Контакты
+       </h2>
+       <div class="contacts__item">
+         <h4>Адрес офиса</h4>
+         <p>г. Великий Новгород ул. Улица д.1 офис 35</p>
+       </div>
+       <div class="contacts__item">
+         <h4>Адрес производства</h4>
+         <p>г. Великий Новгород ул. Улица д.1 офис 35</p>
+       </div>
+       <div class="contacts__item">
+         <h4>Телефон</h4>
+         <a href="tel:" target="blank">+7 (999) 999-99-99</a>
+       </div>
+       <div class="contacts__item">
+         <h4>Почта</h4>
+         <a href="tel:" target="blank">mail@mail.ru</a>
+       </div>
+       <div class="contacts__item" >
+         <h4>Заказать обратный звонок</h4>
+          <div class="button contacts__button callback-toggle">
+            Позвоните мне
+          </div>
+       </div>
+     </div>
+     <div class="contacts__map">
+      <iframe class="map" data="https://yandex.ru/map-widget/v1/?um=constructor%3Ae7846d0ad3e5b33067c5e08ee1c6fe217695b7d9f499bebdd2fa49699cfb718f&amp;source=constructor" src="" width="100%" height="400" frameborder="0"></iframe>
+     </div>
+   </div>
+   <div class="footer__footer">
+     <div class="footer__wrap container">
+        <p>БаниБочки53.рф | Copyright © 2020 </p>
+        <p>
+          ОРГН: 222222222222 | ИНН: 11111111111 | OOO "ОКУЛОВКА-АДЕПТ-ЛЕС"
+        </p>
+        <a href="/privecy-policy/">Политика конфиденциальности</a>
+     </div>
+   </div>
+ </footer>
+<!-- /.footer -->
+<div class="overlay"></div>
+<div class="popup callback">
+  <div class="close">&times;</div>
+  <h2>
+    Оставьте заявку и мы Вам перезвоним
+  </h2>
+  <form action="">
+    <input type="text" placeholder="Ваше имя">
+    <input type="tel" placeholder="+7 (___) ___-__-__">
+    <input type="submit" value="Отправить" class="button">
+    <small>
+      Оставляя заявку, вы соглашаетесь с условиями и <a href="/privecy-policy/" target="blank">Политикой конфиденциальности сайта</a>
+    </small>
+  </form>
+</div>
+<div class="popup buy">
+  <div class="close">&times;</div>
+  <h2>
+    Заказать баню
+  </h2>
+  <div class="popup__type">
+    Баня бочка 7м
+  </div>
+  <form action="">
+    <input type="text" class="input-type">
+    <input type="text" placeholder="Ваше имя">
+    <input type="tel" placeholder="+7 (___) ___-__-__">
+    <input type="submit" value="Отправить" class="button">
+    <small>
+      Оставляя заявку, вы соглашаетесь с условиями и <a href="/privecy-policy/" target="blank">Политикой конфиденциальности сайта</a>
+    </small>
+  </form>
+</div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>
