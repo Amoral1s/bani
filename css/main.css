@@ -1094,21 +1094,3 @@ section {
     bottom: -64px;
   }
 }
-
-@media (max-width: 440px) {
-  body {
-    background-color: #fff;
-  }
-}
-
-@media (max-width: 380px) {
-  body {
-    background-color: #fff;
-  }
-}
-
-@media (max-width: 360px) {
-  body {
-    background-color: #fff;
-  }
-}
