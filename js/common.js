@@ -44,7 +44,7 @@ $(document).ready(function () {
 
   jQuery(window).scroll(function(){
       
-      if (jQuery(window).scrollTop() > 320 && jQuery(window).scrollTop() < 350) {
+      if (jQuery(window).scrollTop() > 120 && jQuery(window).scrollTop() < 950) {
         $('iframe.video').attr('src', $('iframe.video').attr('data'));
         $('iframe.map').attr('src', $('iframe.map').attr('data'));
       }
@@ -61,7 +61,7 @@ $(document).ready(function () {
 
         }
       });
-  }, {passive: true});
+  });
 
   $('.callback-toggle').on('click', function () { 
     $('.overlay').fadeIn(300);
@@ -97,7 +97,34 @@ $(document).ready(function () {
       $('.burger').toggleClass('burger__active')
       $('.header__menu').toggleClass('header__menu__active')
      });
-     
   }
+
+  //cf7
+  jQuery(".wpcf7").on('wpcf7mailsent', function(event){
+    //alert('GOOD');
+    jQuery('#thx').fadeIn(200);
+    //Скрытие поп окна автоматически, через 5,5 секнд
+    jQuery('.overlay').fadeIn(300);
+
+    setTimeout(function(){
+      jQuery('.overlay').fadeOut(300);
+      jQuery('.popup').fadeOut(300);
+      jQuery('#thx').fadeOut(500);
+    },2500);  //3500 = 3,5 секунды
+    
+    setTimeout(function(){jQuery('.popup').fadeOut(300);},2700); 
+    setTimeout(function(){jQuery('#calc').fadeOut(300);},2700); 
+    
+    setTimeout(function(){jQuery('.overlay').fadeOut(300);},2700);
+  });
+
+  jQuery(".wpcf7").on('wpcf7invalid', function(event){
+    alert('Заполните поля правильно и повторите попытку!');
+  });
+  jQuery(".wpcf7").on('wpcf7mailfailed', function(event){
+    alert('Ошибка при отправке! Попробуйте отправить заявку еще раз!');
+  });
+
+
 
 });
