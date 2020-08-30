@@ -489,7 +489,7 @@ section {
   text-align: center;
   max-width: 900px;
   display: block;
-  margin: 0 auto 50px auto;
+  margin: 0 auto 70px auto;
 }
 
 .video__wrap iframe {
@@ -1045,6 +1045,9 @@ section {
   .video__wrap iframe {
     height: 285px;
   }
+  .video__wrap p {
+    margin-bottom: 50px;
+  }
   .gallery .slick-prev {
     left: 20px;
   }
@@ -1086,6 +1089,9 @@ section {
   }
   .features__item:last-child {
     margin-bottom: 0;
+  }
+  .gallery .slick-dots {
+    bottom: -64px;
   }
 }
 
