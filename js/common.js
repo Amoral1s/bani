@@ -61,7 +61,7 @@ $(document).ready(function () {
 
         }
       });
-  });
+  }, {passive: true});
 
   $('.callback-toggle').on('click', function () { 
     $('.overlay').fadeIn(300);
